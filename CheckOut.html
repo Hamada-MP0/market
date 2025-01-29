@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XPremo | Online Store</title>
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" /> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" />
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+  
+</head>
+<body>
+    
+    <header>
+        <div class="container tap-nav">
+            <a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products ...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart-header">
+                <div onclick="open_cart()" class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My cart:</p>
+                    <p class="price-cart-Head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars  btn_open_menu"></i>
+                <ul id="menu">
+                    <span onclick="close_menu()" class="bg_overLay"></span>
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li ><a href="">Home</a></li>
+                    <li><a href="AllProduct.html">All Products</a></li>
+                    <li><a href="item.html">About us</a></li>
+                    <li ><a href="contect.html">Contact</a></li>
+                </ul>
+
+
+                <div class="loging-signup">
+                    <a href="sign-in-page.html" class="btna">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="sign-up-page.html" class="btna">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>My cart <span class="count_item_cart">(0Item in cart)</span></h3>
+            <span class="close-cart">
+                <i onclick="close_cart()" class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div  class="item-in-cart">
+
+           
+        
+        
+
+           
+        </div>
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Cart subtotal</p>
+                <p class="price-cart-total">
+                  $0
+                </p>
+            </div>
+            <div class="button-cart">
+                <a href="CheckOut.html" class="btn-cart">Proceed to checkout</a>
+                <button class="btn-cart trans-bg">Shop more</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="checkout">
+        <div class="container">
+            <form action="">
+                <div class="address">
+                    <h2>Delivery address</h2>
+                    <div class="inputs">
+                        <label for="email"> Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        
+                        <label for="Name"> Name</label>
+                        <input type="text" id="Name" placeholder="Enter your name">
+                        
+                        <label for="Address"> Address</label>
+                        <input type="text" id="Address" placeholder="Enter your address">
+                        
+                        <label for="Phone"> Phone</label>
+                        <input type="tel" id="Phone" placeholder="Enter your phone">
+                    </div>
+                </div>
+
+                <div class="coupon">
+                    <h2>Coupon Code</h2>
+                    <div class="inputs">
+                        <label for="Coupon_code">Coupon Code</label>
+                        <input type="text" id="Coupon_code">
+                    </div>
+                </div>
+            </form>
+
+            <div class="orderSummary">
+                <h1>Order Summary</h1>
+                <div class="items">
+                    <div class="item_cart">
+                        <img src="img/product/product-1.jpg" alt="">
+
+                        <div class="content">
+                            <h4>
+                                Original Mobile Android Dual SIM Smart Phone G3
+                            </h4>
+                            <p class="price_cart"> Price : <span> $185</span></p>
+                        </div>
+                    </div>
+
+                    <div class="item_cart">
+                        <img src="img/product/product3.jpg" alt="">
+
+                        <div class="content">
+                            <h4>
+                               Sumsung Screen
+                            </h4>
+                            <p class="price_cart"> Price : <span> $142</span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="total">
+                        <p>total</p>
+                        <span>$327</span>
+                    </div>
+
+                    <div class="button_div">
+                        <button>place order</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+]
+
+
+<footer>
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h5>Hotline free 24/24</h5>
+                    <h6>(+100) 123 456 789</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam?</p>
+        </div>
+        <div class="row">
+            <h4> FAQs & Help</h4>
+            <div class="links">
+                <a href="#">F.A.Q's</a>
+                <a href="#">Ordering Tracking</a>
+                <a href="#">Contacts</a>
+                <a href="#">Events</a>
+                <a href="#">Help Center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping & Delivery</h4>
+            <div class="links">
+                <a href="#">Delivary Information</a>
+                <a href="#">Discount</a>
+                <a href="#">Payment & Shipping</a>
+                <a href="#">Estimated Delivery Time</a>
+                <a href="#">Shipping Guide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="#">Popular</a>
+                <a href="#">Our Services</a>
+                <a href="#">Your Acount</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container">
+            <p>Copyright &copy; <span>Topico.</span> all right reserved</p>
+            <div class="payment_img">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/All_product.js"></script>
+
+
+
+
+   
+</body>
+</html>

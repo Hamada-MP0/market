@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XPremo | Online Store</title>
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" /> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" />
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body class="menu-side-in-bag">
+
+    <header>
+        <div class="container tap-nav">
+            <a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products ...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart-header">
+                <div onclick="open_cart()" class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My cart:</p>
+                    <p class="price-cart-Head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars  btn_open_menu"></i>
+                <ul id="menu">
+                    <span onclick="close_menu()" class="bg_overLay"></span>
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li ><a href="">Home</a></li>
+                    <li ><a href="AllProduct.html">All Products</a></li>
+                    <li ><a href="item.html">About us</a></li>
+                    <li ><a href="contect.html">Contact</a></li>
+                </ul>
+
+
+                <div class="loging-signup">
+                    <a href="sign-in-page.html" class="btna">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="sign-up-page.html" class="btna">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>My cart <span class="count_item_cart">(0Item in cart)</span></h3>
+            <span class="close-cart">
+                <i onclick="close_cart()" class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div  class="item-in-cart">
+
+           
+        
+        
+
+           
+        </div>
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Cart subtotal</p>
+                <p class="price-cart-total">
+                  $0
+                </p>
+            </div>
+            <div class="button-cart">
+                <a href="CheckOut.html" class="btn-cart">Proceed to checkout</a>
+                <button class="btn-cart trans-bg">Shop more</button>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="contanier">
+
+
+        <div class="box-sign-up">
+            <div class="signup">
+
+                <form action="" id="loginForm">
+
+                    <label for="email">Email</label>
+                    <div class="inp">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="email" type="email" placeholder="email" required>
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div class="inp">
+                        <i class="fa-solid fa-lock"></i>
+                        <input id="password" type="password" placeholder="password" required>
+                    </div>
+
+                    <div class="check-box">
+                        <div class="check">
+                            <input type="checkbox">
+                            <span> Save Account</span>
+                        </div>
+                        <a href="#" class="forg">Forgot your password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+
+                <span class="line-sign">or</span>
+
+                <div class="sign-soc">
+                    <div class="box">
+                        <a class="btn" href="#"><img src="img/google.png" alt="">Sign in with Google account</a>
+                    </div>
+            </div>
+            <p class="creat-ac">I don't have an account <a href="#">Create an account
+            </a></p>
+        </div>
+    </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline free 24/24</h5>
+                        <h6>(+100) 123 456 789</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam?</p>
+            </div>
+            <div class="row">
+                <h4> FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F.A.Q's</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Delivary Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Acount</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topico.</span> all right reserved</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // منع الإرسال الافتراضي للنموذج
+    
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+    
+            if (email === "" || password === "") {
+                alert("يرجى إدخال البريد الإلكتروني وكلمة المرور!");
+                return;
+            }
+    
+            // التوجيه إلى الصفحة الأخرى بعد التحقق
+            window.location.href = "index.html";
+        });
+    </script>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/All_product.js"></script>
+    
+    
+    
+</body>
+</html>

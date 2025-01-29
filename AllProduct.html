@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XPremo | Online Store</title>
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" /> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" />
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+  
+</head>
+<body>
+    
+    <header>
+        <div class="container tap-nav">
+            <a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="search" placeholder="Search for products ...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart-header">
+                <div onclick="open_cart()" class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My cart:</p>
+                    <p class="price-cart-Head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars  btn_open_menu"></i>
+                <ul id="menu">
+                    <span onclick="close_menu()" class="bg_overLay"></span>
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li ><a href="index.html">Home</a></li>
+                    <li class="active"><a href="AllProduct.html">All Products</a></li>
+                    <li><a href="item.html">About us</a></li>
+                    <li ><a href="contect.html">Contact</a></li>
+                </ul>
+
+                <div class="loging-signup">
+                    <a href="sign-in-page.html" class="btna">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="sign-up-page.html" class="btna">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top-cart">
+            <h3>My cart <span class="count_item_cart">(0Item in cart)</span></h3>
+            <span class="close-cart">
+                <i onclick="close_cart()" class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div  class="item-in-cart">
+
+           
+        
+        
+
+           
+        </div>
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Cart subtotal</p>
+                <p class="price-cart-total">
+                  $0
+                </p>
+            </div>
+            <div class="button-cart">
+                <a href="CheckOut.html" class="btn-cart">Proceed to checkout</a>
+                <button class="btn-cart trans-bg">Shop more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Top_Page">
+        <div class="container">
+            <h1>Experience The Future Of Technology </h1>
+            <p>Find Everything you need to transform your home into a smart , connect space . Our Topics Store Offers A Wide Range Of Devices To Fit Your Needs</p>
+
+        </div>
+    </div>
+
+
+    <section class="all_products">
+        <div class="container">
+            <span class="btn_filters" onclick="open_filter()">
+             filter <i   class="fa-solid fa-filter"></i>
+
+            </span>
+            <div class="filter">
+                <h2>Filter</h2>
+
+                <div class="filter_item">
+                    <h4>Categorie</h4>
+                    <div class="content">
+
+
+
+                        <div class="item">
+                            <span>Phones</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Tablets</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>Electronics</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>TV</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>Fashion</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Watches</span>
+                            <input type="checkbox">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="filter_item">
+                    <h4>Brand</h4>
+                    <div class="content">
+
+
+
+                        <div class="item">
+                            <span>Apple</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Samsung</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>Intel</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>Oppo</span>
+                            <input type="checkbox">
+                        </div>
+
+
+                        <div class="item">
+                            <span>Xiaomi</span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span>Huawei</span>
+                            <input type="checkbox">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                
+                <div class="filter_item">
+                    <h4>Color</h4>
+                    <div class="content">
+
+
+
+                        <div class="item">
+                            <span class="color" style="background-color: red;"> </span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span class="color" style="background-color: blue;"> </span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span class="color" style="background-color: black;"> </span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span class="color" style="background-color: orangered;"> </span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span class="color" style="background-color: green;"> </span>
+                            <input type="checkbox">
+                        </div>
+
+                        <div class="item">
+                            <span class="color" style="background-color: yellow;"> </span>
+                            <input type="checkbox">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+                
+              
+            </div>
+
+
+            <div id="products_dev" class="products_dev">
+
+            </div>
+        </div>
+
+
+        <div class="pagination">
+            <span class="btn_page prev"> <i class="fa-solid fa-backward"></i></span>
+          <a href="#">  <span class="num_page active">1</span></a>
+
+           <a href="#"> <span class="num_page">2</span></a>
+            <a href="#"><span class="num_page">3</span></a>
+     
+            <span class="btn_page next"> <i class="fa-solid fa-forward"></i></span>
+        </div>
+    </section>
+
+
+
+<div class="back_to_top">
+    <p>back to top</p>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="big_row">
+            <img src="img/logo-white.png" alt="">
+            <div class="hotline">
+                <i class="fa-solid fa-headset"></i>
+                <div class="text">
+                    <h5>Hotline free 24/24</h5>
+                    <h6>(+100) 123 456 789</h6>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam?</p>
+        </div>
+        <div class="row">
+            <h4> FAQs & Help</h4>
+            <div class="links">
+                <a href="#">F.A.Q's</a>
+                <a href="#">Ordering Tracking</a>
+                <a href="#">Contacts</a>
+                <a href="#">Events</a>
+                <a href="#">Help Center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping & Delivery</h4>
+            <div class="links">
+                <a href="#">Delivary Information</a>
+                <a href="#">Discount</a>
+                <a href="#">Payment & Shipping</a>
+                <a href="#">Estimated Delivery Time</a>
+                <a href="#">Shipping Guide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="#">Popular</a>
+                <a href="#">Our Services</a>
+                <a href="#">Your Acount</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <div class="container">
+            <p>Copyright &copy; <span>Topico.</span> all right reserved</p>
+            <div class="payment_img">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/All_product.js"></script>
+
+
+
+
+   
+</body>
+</html>
